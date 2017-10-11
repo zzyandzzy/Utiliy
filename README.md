@@ -4,7 +4,7 @@
 
 **Retorfit** + **RxAndroid** and more library
 
-##Use
+## Use
 
 **Http**
 
@@ -27,7 +27,7 @@ if return Json,please use `staticDoGetUrlToJson`
 ImageViewUtils.setImageBitmap(iv1,"https://avatars1.githubusercontent.com/u/14029779?v=4&s=460");
 ```
 
-##Dependency
+## Dependency
 
 **Gradle**
 
