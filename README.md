@@ -4,7 +4,6 @@
 
 **Retorfit** + **RxAndroid** and more library
 
-
 ## SetUp
 
 **To use this library your minSdkVersion must be >= 21.**
@@ -14,6 +13,7 @@
 Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
+
 ```gradle
 allprojects {
 		repositories {			...
@@ -23,6 +23,7 @@ allprojects {
 ```
 
 Step 2. Add the dependency
+
 ```gradle
 dependencies {
     compile 'com.github.zzyandzzy:utiliy:0.0.1'
@@ -34,6 +35,7 @@ dependencies {
 To get a Git project into your build:
 
 Step 1. Add the JitPack repository to your build file
+
 ```xml
 <repositories>
 		<repository>
@@ -44,6 +46,7 @@ Step 1. Add the JitPack repository to your build file
 ```
 
 Step 2. Add the dependency
+
 ```xml
 	<dependency>
 	    <groupId>com.github.zzyandzzy</groupId>
@@ -57,7 +60,9 @@ Step 2. Add the dependency
 ### net
 
 - [RetrofitHttpUtils]([400])
-  - `staticDoGetUrl(String url)` ,return `okhttp3.ResponseBody`
+
+  - `staticDoGetUrl(String url)` ,return `okhttp3.ResponseBody`
+  
 ```java
 RetrofitHttpUtils.staticDoGetUrl("http://www.zzyandzzy.xyz/")
                 .subscribe(new Consumer<ResponseBody>() {
@@ -65,14 +70,16 @@ RetrofitHttpUtils.staticDoGetUrl("http://www.zzyandzzy.xyz/")
                     public void accept(ResponseBody responseBody) throws Exception {
                         LogUtils.v(responseBody.string());
                     }
-                });
+                });
 ```
 if return Json,please use `staticDoGetUrlToJson(String url)`
 
 ## widget
 
 - [ImageViewUtils]([401])
-  - `setImageViewBitmap(ImageView iv1,String url)`
+
+  - `setImageViewBitmap(ImageView iv1,String url)`
+  
 ```java
 ImageViewUtils.setImageBitmap(iv1,"https://avatars1.githubusercontent.com/u/14029779?v=4&s=460");
 ```
