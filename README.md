@@ -4,8 +4,32 @@
 
 Retorfit + RxAndroid and more library
 
+Use
+------
+
+**Http**
+
+get url return `okhttp3.ResponseBody`
+```
+RetrofitHttpUtils.staticDoGetUrl("http://www.zzyandzzy.xyz/")
+                .subscribe(new Consumer<ResponseBody>() {
+                    @Override
+                    public void accept(ResponseBody responseBody) throws Exception {
+                        LogUtils.v(responseBody.string());
+                    }
+                });
+```
+if return Json,please use `staticDoGetUrlToJson`
+
+**ImageView**
+
+setImageViewBitmap
+```
+ImageViewUtils.setImageBitmap(iv1,"https://avatars1.githubusercontent.com/u/14029779?v=4&s=460");
+```
+
 Dependency
---------
+------
 
 **Gradle**
 
