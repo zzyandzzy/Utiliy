@@ -10,7 +10,7 @@ Use
 **Http**
 
 get url return `okhttp3.ResponseBody`
-```
+```java
 RetrofitHttpUtils.staticDoGetUrl("http://www.zzyandzzy.xyz/")
                 .subscribe(new Consumer<ResponseBody>() {
                     @Override
@@ -24,7 +24,7 @@ if return Json,please use `staticDoGetUrlToJson`
 **ImageView**
 
 setImageViewBitmap
-```
+```java
 ImageViewUtils.setImageBitmap(iv1,"https://avatars1.githubusercontent.com/u/14029779?v=4&s=460");
 ```
 
@@ -36,7 +36,7 @@ Dependency
 Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
-```
+```gradle
 allprojects {
 		repositories {
 			...
@@ -57,7 +57,7 @@ dependencies {
 To get a Git project into your build:
 
 Step 1. Add the JitPack repository to your build file
-```
+```xml
 <repositories>
 		<repository>
 		    <id>jitpack.io</id>
@@ -67,7 +67,7 @@ Step 1. Add the JitPack repository to your build file
 ```
 
 Step 2. Add the dependency
-```
+```xml
 	<dependency>
 	    <groupId>com.github.zzyandzzy</groupId>
 	    <artifactId>Utiliy</artifactId>
