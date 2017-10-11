@@ -57,6 +57,7 @@ Step 2. Add the dependency
 ### net
 
 - [RetrofitHttpUtils]([400])
+
     - *get* url return `okhttp3.ResponseBody`
 ```java
 RetrofitHttpUtils.staticDoGetUrl("http://www.zzyandzzy.xyz/")
@@ -72,6 +73,7 @@ if return Json,please use `staticDoGetUrlToJson`
 ## widget
 
 - [ImageViewUtils]([401])
+
     - *setImageViewBitmap*
 ```java
 ImageViewUtils.setImageBitmap(iv1,"https://avatars1.githubusercontent.com/u/14029779?v=4&s=460");
