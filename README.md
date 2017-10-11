@@ -4,40 +4,19 @@
 
 **Retorfit** + **RxAndroid** and more library
 
-## Use
 
-**Http**
+## SetUp
 
-*get* url return `okhttp3.ResponseBody`
-```java
-RetrofitHttpUtils.staticDoGetUrl("http://www.zzyandzzy.xyz/")
-                .subscribe(new Consumer<ResponseBody>() {
-                    @Override
-                    public void accept(ResponseBody responseBody) throws Exception {
-                        LogUtils.v(responseBody.string());
-                    }
-                });
-```
-if return Json,please use `staticDoGetUrlToJson`
+**To use this library your minSdkVersion must be >= 21.**
 
-**ImageView**
-
-*setImageViewBitmap*
-```java
-ImageViewUtils.setImageBitmap(iv1,"https://avatars1.githubusercontent.com/u/14029779?v=4&s=460");
-```
-
-## Dependency
-
-**Gradle**
+### Gradle
 
 Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
 ```gradle
 allprojects {
-		repositories {
-			...
+		repositories {			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
@@ -50,7 +29,7 @@ dependencies {
 }
 ```
 
-**Maven**
+### Maven
 
 To get a Git project into your build:
 
@@ -73,5 +52,34 @@ Step 2. Add the dependency
 	</dependency>
 ```
 
+## Usage
+
+### net
+
+[RetrofitHttpUtils]([400])
+
+*get* url return `okhttp3.ResponseBody`
+```java
+RetrofitHttpUtils.staticDoGetUrl("http://www.zzyandzzy.xyz/")
+                .subscribe(new Consumer<ResponseBody>() {
+                    @Override
+                    public void accept(ResponseBody responseBody) throws Exception {
+                        LogUtils.v(responseBody.string());
+                    }
+                });
+```
+if return Json,please use `staticDoGetUrlToJson`
+
+### widget
+
+[ImageViewUtils]([401])
+
+*setImageViewBitmap*
+```java
+ImageViewUtils.setImageBitmap(iv1,"https://avatars1.githubusercontent.com/u/14029779?v=4&s=460");
+```
+
 [101]: https://img.shields.io/github/license/HeinrichReimer/material-intro.svg
 [102]: https://mit-license.org/
+[400]: https://github.com/zzyandzzy/Utiliy/blob/master/library/src/main/java/xyz/zzyandzzy/utiliy/net/RetrofitHttpUtils.java
+[401]: https://github.com/zzyandzzy/Utiliy/blob/master/library/src/main/java/xyz/zzyandzzy/utiliy/widget/ImageViewUtils.java
