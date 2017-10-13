@@ -6,7 +6,7 @@
 
 ## SetUp
 
-**To use this library your minSdkVersion must be >= 21.**
+**To use this library your minSdkVersion must be >= 19.**
 
 ### Gradle
 
