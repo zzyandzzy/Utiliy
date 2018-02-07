@@ -59,7 +59,7 @@ Step 2. Add the dependency
 
 ### net
 
-- [RetrofitHttpUtils]([400])
+- [RetrofitHttpUtils][400]
 
   - `staticDoGetUrl(String url)` ,return `okhttp3.ResponseBody`
   
@@ -76,7 +76,7 @@ if return Json,please use `staticDoGetUrlToJson(String url)`
 
 ## widget
 
-- [ImageViewUtils]([401])
+- [ImageViewUtils][401]
 
   - `setImageViewBitmap(ImageView iv1,String url)`
   
