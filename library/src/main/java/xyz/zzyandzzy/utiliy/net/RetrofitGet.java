@@ -1,7 +1,5 @@
 package xyz.zzyandzzy.utiliy.net;
 
-import org.json.JSONObject;
-
 import java.util.Map;
 
 import io.reactivex.Observable;
@@ -14,11 +12,9 @@ import retrofit2.http.Url;
 
 public interface RetrofitGet {
     @GET
-    Observable<ResponseBody> doGetForUrl(@Url String url);
+    Observable<ResponseBody> doGetForUrl(@Url String path);
 
-    @GET("{path}")
-    Observable<ResponseBody> doGetForPath(@Path("path") String path);
-
-    @GET("{path}")
-    Observable<ResponseBody> doGetForPathAddQuery(@Path("path") String path, @QueryMap Map<String, String> params);
+    @GET
+    Observable<ResponseBody> doGetForPathAddQuery(@Url String path,
+                                                  @QueryMap Map<String, Object> params);
 }
