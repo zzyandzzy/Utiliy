@@ -26,7 +26,7 @@ Step 2. Add the dependency
 
 ```gradle
 dependencies {
-    compile 'com.github.zzyandzzy:utiliy:0.0.1'
+    compile 'com.github.zzyandzzy:Utiliy:0.0.2'
 }
 ```
 
